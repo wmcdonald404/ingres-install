@@ -115,24 +115,10 @@ II_CHARSET=UTF8
 II_LICENSE_DIR=/home/ingres
 EOF
 ```
-
 # Ingres install
-**WORK IN PROGRESS**
 
-At this stage the installer will run successfully, but only interactively with:
+It should now be possible to run the full installation with the response file:
 
-[root@server ~]# /home/ingres/ingres-11.0.0-100-com-linux-rpm-x86_64-UpgradePatch15214/express_install.sh -licdir /home/ingres/
-
-
-**IGNORE BELOW**
-
-2. Set the response file environment variable
-
-[ingres@server ~]$ II_RESPONSE_FILE=/home/ingres/installer.properties
-[ingres@server ~]$ express_install.sh -express
-
-
-[root@server ~]# /home/ingres/ingres-11.0.0-100-com-linux-rpm-x86_64-UpgradePatch15214/express_install.sh -respfile /home/ingres/installer.properties -express
-
+[root@server ~]# /home/ingres/ingres-11.0.0-100-com-linux-rpm-x86_64-UpgradePatch15214/express_install.sh -acceptlicense -respfile /home/ingres/installer.properties
 
 
