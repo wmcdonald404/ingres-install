@@ -70,13 +70,13 @@ EOF
 
 ***Note***: Bind mounts are not shown in the output of the mount command. Use `findmnt` to inspect bind mounts.
 
-5. Install pre-requisite RPMs (libaio, unzip, perl, glibc.i686, libgcc.i686, zlib.i686, libstdc++.i686)
+9. Install pre-requisite RPMs (libaio, unzip, perl, glibc.i686, libgcc.i686, zlib.i686, libstdc++.i686)
 ```
 [root@server ~]# yum install unzip libaio perl glibc.i686 libgcc.i686 zlib.i686 libstdc++.i686
 ```
 ***Note***: Any Yum multilib failures at this point are typically due to differing versions of the same package in different architectures in available yum repositories. Ensure that packagename.i686 has the exact same %version and %release as the corresponding x86_64 package.
 
-6. Copy and import the Actian GPG public key used to sign their RPMs
+10. Copy and import the Actian GPG public key used to sign their RPMs
 ```
 [user@management ~]$ scp ingres-11.0.0-100-com-linux-rpm-x86_64-UpgradePatch15214-key.asc ingres@server:
 ```
@@ -85,13 +85,14 @@ EOF
 ```
 ***Note***: this key can also be hosted on an internal webserver and imported directly from its HTTP URI
 
-7. Copy the Ingres installation binaries and license file
+11. Copy the Ingres installation binaries and license file
 ```
 [user@management ~]$ scp ingres-11.0.0-100-com-linux-rpm-x86_64-UpgradePatch15214.tgz ingres@server:
 [user@management ~]$ scp license/license.xml ingres@server:license.xml
 ```
 ***Note***: The binary installer should ideally be stored in a binary artefact repository.
-8. Extract the Ingres installation binaries
+
+12. Extract the Ingres installation binaries
 ```
 [ingres@server ~]$ tar xf ingres-11.0.0-100-com-linux-rpm-x86_64-UpgradePatch15214.tgz
 ```
