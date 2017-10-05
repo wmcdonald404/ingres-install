@@ -119,6 +119,7 @@ EOF
 
 It should now be possible to run the full installation with the response file:
 
+```
 [root@server ~]# /home/ingres/ingres-11.0.0-100-com-linux-rpm-x86_64-UpgradePatch15214/express_install.sh -acceptlicense -respfile /home/ingres/installer.properties
-
+```
 
