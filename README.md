@@ -112,7 +112,7 @@ II_ENABLE_SQL92=ON
 II_USERID=ingres
 II_GROUPID=ingres
 II_CHARSET=UTF8
-II_LICENSE_DIR=/home/ingres/license.xml
+II_LICENSE_DIR=/home/ingres
 EOF
 ```
 
