@@ -116,6 +116,7 @@ II_LICENSE_DIR=/home/ingres/license.xml
 EOF
 ```
 
+# Ingres install
 **WORK IN PROGRESS**
 
 At this stage the installer will run successfully, but only interactively with:
@@ -123,16 +124,15 @@ At this stage the installer will run successfully, but only interactively with:
 [root@server ~]# /home/ingres/ingres-11.0.0-100-com-linux-rpm-x86_64-UpgradePatch15214/express_install.sh -licdir /home/ingres/
 
 
+**IGNORE BELOW**
+
+2. Set the response file environment variable
+
+[ingres@server ~]$ II_RESPONSE_FILE=/home/ingres/installer.properties
+[ingres@server ~]$ express_install.sh -express
 
 
-# 2. Set the response file environment variable
-# 
-# [ingres@server ~]$ II_RESPONSE_FILE=/home/ingres/installer.properties
-# [ingres@server ~]$ express_install.sh -express
-
-# Ingres install
-
-# [root@server ~]# /home/ingres/ingres-11.0.0-100-com-linux-rpm-x86_64-UpgradePatch15214/express_install.sh -respfile /home/ingres/installer.properties -express
+[root@server ~]# /home/ingres/ingres-11.0.0-100-com-linux-rpm-x86_64-UpgradePatch15214/express_install.sh -respfile /home/ingres/installer.properties -express
 
 
 
